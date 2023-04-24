@@ -1,0 +1,271 @@
+*{  margin: 0;
+    padding: 0;    
+    border: 0;
+    outline: 0;    
+    list-style: none;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.header__body{
+    height: 90px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.logo__p {
+    font-size: 30px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header__list {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: 60px;
+    justify-content: space-around;
+}
+
+.list__li {
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.list__button {
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #621DED;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.nav__burger {
+    width: 65px;
+    height: 40px;
+    position: relative;
+    display: none;
+}
+
+.nav__burger-parts {
+    width: 100%;
+    background-color: #fff;
+    height: 10%;
+    margin-top: 30%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.nav__burger-parts::before{
+    content: '';
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    margin-top: 30%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.nav__burger-parts::after{
+    content: '';
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    margin-top: -30%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.nav__burger:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 30px rgb(125, 17, 168);
+    font-size: 35px;
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
+
+.header__logo:hover{
+    cursor: pointer;
+}
+
+.list__button:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(125, 17, 168);
+    cursor: pointer;
+}
+
+.list__li:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(125, 17, 168);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.main {
+
+}
+
+.afhead {
+    margin: 250px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.afhead__logo {
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+.afhead__title {
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.afhead__info {
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.afhead__button {
+    width: 350px;
+    height: 75px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #621DED;
+    border-radius: 15px;
+}
+
+.afhead__button:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(125, 17, 168);
+    cursor: pointer;
+}
+
+@media (max-width: 1403px) { 
+    .logo__p{
+        font-size: 25px;
+    }
+
+    .logo{
+        width: 30px;
+    }
+
+    .list__li{
+        font-size: 25px;
+    }
+
+    .header__nav{
+        width: 700px;
+    }
+
+    .Header__list{
+        width: 500px;
+    }
+
+    .list__button{
+        width: 150px;
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1315px) {
+    .afhead__title{
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 1011px) { 
+    .nav__burger{
+        display: block;
+    }
+
+    .Header__list{
+        display: none;
+    }
+
+    .header__nav{
+        width: 350px;
+    }
+} 
+
+@media (max-width: 870px) {
+    .afhead__title{
+        font-size: 45px;
+    }
+
+    .afhead__info{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 603px) { 
+    .afhead__title{
+        font-size: 35px;
+    }
+
+    .afhead__info{
+        font-size: 20px;
+    }
+
+    .afhead__button{
+        width: 200px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .header__nav{
+        width: 250px;
+    }
+}
