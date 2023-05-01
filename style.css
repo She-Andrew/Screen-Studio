@@ -147,7 +147,7 @@ body{
 }
 
 .afhead {
-    margin: 250px auto;
+    margin: 250px auto 200px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -192,6 +192,129 @@ body{
     cursor: pointer;
 }
 
+.vidios {
+
+}
+
+.vidios__title {
+    font-size: 52px;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.vidios__info {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px ;
+    max-width: 800px;
+}
+
+.vidios__examples {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: 1800px;
+}
+
+
+.vidios__examples-left {
+
+}
+
+.examples__left {
+    max-width: 516px;
+    height: 600px;
+}
+
+.vidio {
+    width: 516px ;
+    height: 292px;
+    background-color: #13151B;
+    border-radius: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause:hover{
+    cursor: pointer;
+}
+
+.exaples__title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.examples__p {
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 516px;
+}
+
+.vidio1 {
+    width: 516px;
+    height: 516px;
+    background-color: #13151B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vidios__examples-right {
+    margin-top: 150px;
+}
+
+.examples__right {
+    width: 516px;
+    height: 500px;
+}
+
+.vidios img{
+    background-color: #fff;
+}
+
+.video-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.video-info-left {
+    padding: 30px;
+}
+
+.New {
+    width: 127px;
+    height: 20px;
+    background: #a37bf453;
+    color: #A37BF4;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.video__info-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.video__info-p {
+    font-size: 20px;
+    font-weight: 400
+}
+
 @media (max-width: 1403px) { 
     .logo__p{
         font-size: 25px;
@@ -224,12 +347,39 @@ body{
     .afhead__title{
         font-size: 65px;
     }
+
 }
 
+@media (max-width: 1150px) { 
+    .vidios__examples{
+        flex-wrap: wrap;
+    }
+
+    .vidio{
+        width: 456px;
+    }
+    
+    .vidio1{
+        width: 456px;
+    }
+    
+    .examples__left {
+        width: 476px;
+        height: 500px;
+        padding-left: -20px;
+    }
+
+}
+@media (max-width: 1050px) { 
+    .video-info{
+        margin-top: 1600px;
+    }
+}
 @media (max-width: 1011px) { 
     .nav__burger{
         display: block;
     }
+
 
     .Header__list{
         display: none;
@@ -240,6 +390,13 @@ body{
     }
 } 
 
+@media (max-width: 741px) { 
+    .video-info{
+        flex-wrap: wrap;
+    }
+
+}
+
 @media (max-width: 870px) {
     .afhead__title{
         font-size: 45px;
@@ -248,6 +405,8 @@ body{
     .afhead__info{
         font-size: 30px;
     }
+
+
 }
 
 @media (max-width: 603px) { 
@@ -268,4 +427,75 @@ body{
     .header__nav{
         width: 250px;
     }
+    
+    .examples__p{
+        font-size: 18px;
+    }
+}
+
+.slider {
+    max-width: 900px;
+    margin: 50px auto 30px;
+    text-align: center;
+}
+
+.slider__title {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.slider__p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.slider__img {
+
+}
+
+.coments {
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.coments__title {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.project__coments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coments__p {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 4\200;
+}
+
+.coment {
+    width: 570px;
+    height: 260px;
+    background: #13151B;
+    border: 1px solid #1B1E26;
+    border-radius: 6px;
+    margin: 50px 0;
+}
+.nickname {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
+}
+.nick__logo {
+}
+.nick__text {
+}
+.nick {
+}
+.username {
+}
+.coment__text {
 }
